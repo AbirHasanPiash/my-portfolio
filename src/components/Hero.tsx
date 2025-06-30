@@ -34,7 +34,7 @@ export default function Hero() {
   transition={{ duration: 0.8, delay: 0.4 }}
   className="mt-8 text-3xl sm:text-5xl font-bold leading-tight tracking-tight max-w-3xl z-10 text-white"
 >
-  Hi, I’m <span className="text-cyan-400">Piash</span>
+  Hi, I&apos;m <span className="text-cyan-400">Piash</span>
   <br />
   <span className="text-slate-300 text-xl sm:text-2xl font-medium">
     <Typewriter

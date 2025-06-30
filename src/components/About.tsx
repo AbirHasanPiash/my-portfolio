@@ -13,7 +13,7 @@ export default function About() {
             About Me
           </h2>
           <p className="text-slate-400 text-base sm:text-lg leading-relaxed">
-            I'm{" "}
+            I&apos;m{" "}
             <span className="text-cyan-400 font-semibold">
               MD. ABIR HASAN PIASH
             </span>
@@ -29,7 +29,7 @@ export default function About() {
             more — I build elegant solutions to complex problems.
           </p>
           <p className="mt-4 text-slate-400 text-base sm:text-lg leading-relaxed">
-            I'm an open-source contributor, UI enthusiast, and a clean-code
+            I&apos;m an open-source contributor, UI enthusiast, and a clean-code
             advocate. I love collaborating, learning, and improving continuously
             in both frontend and backend development.
           </p>
