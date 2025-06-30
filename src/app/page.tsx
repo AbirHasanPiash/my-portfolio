@@ -1,17 +1,14 @@
 import About from "@/components/About";
+import Blog from "@/components/Blog";
+import Contact from "@/components/Contact";
 import Education from "@/components/Education";
-import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
-import Navbar from "@/components/Navbar";
 import Projects from "@/components/Projects";
 import TechStack from "@/components/Tape";
 
 export default function Home() {
   return (
     <div className="min-h-screen font-[var(--font-inter)] bg-background text-foreground flex flex-col">
-      {/* Fixed top section */}
-      <Navbar />
-
       {/* Main Content */}
       <main className="flex-grow flex flex-col items-center text-center">
         <Hero />
@@ -19,15 +16,13 @@ export default function Home() {
         <TechStack />
         <Education />
         <Projects />
+        <Contact />
+        <Blog />
         {/*
         <Experience />
         <Testimonials />
-        <Blog />
-        <Contact /> */}
+         */}
       </main>
-
-      {/* Footer */}
-      <Footer />
     </div>
   );
 }

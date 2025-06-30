@@ -7,22 +7,22 @@ import { ExternalLink } from 'lucide-react';
 
 const projects = [
   {
-    title: 'Portfolio Website',
-    image: '/projects/portfolio.png',
+    title: 'Event Management System',
+    image: '/event_management.png',
     link: '/projects/portfolio',
-    live: 'https://your-portfolio.com',
+    live: 'https://event-management-bjru.onrender.com/',
   },
   {
-    title: 'E-commerce App',
+    title: 'Pzafira Online Clothing Store',
     image: '/pzafira.png',
     link: '/projects/ecommerce',
     live: 'https://pzafira.vercel.app/',
   },
   {
-    title: 'Blog Platform',
-    image: '/projects/blog.png',
+    title: 'Food Recipe Finder',
+    image: '/food_recipe.png',
     link: '/projects/blog',
-    live: 'https://your-blog.com',
+    live: 'https://abirhasanpiash.github.io/Find-Food-Recipe/',
   },
 ];
 
@@ -50,11 +50,8 @@ export default function Projects() {
                   src={image}
                   alt={title}
                   fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="object-cover transition-transform duration-500"
                 />
-                <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center text-white text-xl font-semibold">
-                  {title}
-                </div>
               </div>
 
               {/* Content */}

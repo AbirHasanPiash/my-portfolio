@@ -6,12 +6,12 @@ export default function About() {
       id="about"
       className="w-full bg-gray-900 text-slate-200 py-20 px-6 sm:px-12 lg:px-24 font-[var(--font-inter)] overflow-hidden"
     >
+        <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+            About Me
+          </h2>
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
         {/* Text Content */}
         <div className="flex-1">
-          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-            About Me
-          </h2>
           <p className="text-slate-400 text-base sm:text-lg leading-relaxed">
             I&apos;m{" "}
             <span className="text-cyan-400 font-semibold">

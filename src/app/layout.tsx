@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 // Load Inter font
 const inter = Inter({
@@ -67,7 +69,9 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body className={`${inter.variable} font-sans bg-background text-foreground antialiased`}>
+        <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

@@ -73,7 +73,7 @@ export default function TechStack() {
         </div>
       </div>
 
-      <div className="relative w-full overflow-hidden py-16 bg-gray-900">
+      <div className="relative w-full overflow-hidden py-12 bg-gray-900">
         {/* Top wave */}
         <svg
           className="absolute top-0 left-0 w-full h-32 text-gray-900 rotate-180"
