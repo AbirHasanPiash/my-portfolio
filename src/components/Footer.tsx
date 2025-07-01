@@ -1,7 +1,5 @@
 "use client";
 
-import Link from "next/link";
-
 export default function Footer() {
   return (
     <footer className="w-full flex justify-center border-t border-white/10 bg-gray-900/80 backdrop-blur-md text-white font-[var(--font-inter)]">
