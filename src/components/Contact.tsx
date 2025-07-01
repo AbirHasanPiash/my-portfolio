@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import { Mail, MapPin, Phone } from "lucide-react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import Link from "next/link";
 
 export default function Contact() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
@@ -51,6 +53,26 @@ export default function Contact() {
               <p className="text-slate-400 text-sm sm:text-base">
                 Gulshan 1, Dhaka, Bangladesh
               </p>
+            </div>
+            <div className="flex space-x-6 items-center py-6">
+              <Link
+                href="https://github.com/AbirHasanPiash"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white transition-transform transform hover:scale-110"
+                aria-label="GitHub"
+              >
+                <FaGithub className="text-3xl" />
+              </Link>
+              <Link
+                href="https://www.linkedin.com/in/a-h-piash/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#0A66C2] transition-transform transform hover:scale-110"
+                aria-label="LinkedIn"
+              >
+                <FaLinkedin className="text-3xl" />
+              </Link>
             </div>
           </div>
 

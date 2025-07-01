@@ -14,15 +14,21 @@ import {
   SiBootstrap,
   SiDjango,
   SiExpress,
+  SiHtml5,
+  SiCss3,
+  SiPython,
 } from "react-icons/si";
 
 const techStack = [
+  { Icon: SiHtml5, color: "#E34F26", name: "HTML" },
+  { Icon: SiCss3, color: "#1572B6", name: "CSS" },
   { Icon: SiNextdotjs, color: "#000000", name: "Next.js" },
   { Icon: SiReact, color: "#61DAFB", name: "React" },
   { Icon: SiTypescript, color: "#3178C6", name: "TypeScript" },
   { Icon: SiJavascript, color: "#F7DF1E", name: "JavaScript" },
   { Icon: SiTailwindcss, color: "#38BDF8", name: "Tailwind CSS" },
   { Icon: SiBootstrap, color: "#7952B3", name: "Bootstrap" },
+  { Icon: SiPython, color: "#3776AB", name: "Python" },
   { Icon: SiDjango, color: "#092E20", name: "Django" },
   { Icon: SiNodedotjs, color: "#339933", name: "Node.js" },
   { Icon: SiExpress, color: "#000000", name: "Express.js" },

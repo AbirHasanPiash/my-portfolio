@@ -16,8 +16,8 @@ export default function Home() {
         <TechStack />
         <Education />
         <Projects />
-        <Contact />
         <Blog />
+        <Contact />
         {/*
         <Experience />
         <Testimonials />
