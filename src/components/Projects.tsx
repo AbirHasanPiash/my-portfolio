@@ -28,7 +28,7 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section id="projects" className="bg-gray-900 w-full px-4 sm:px-6 lg:px-12 py-20 text-white font-[var(--font-inter)]">
+    <section id="projects" className="scroll-mt-20 bg-gray-900 w-full px-4 sm:px-6 lg:px-12 py-20 text-white font-[var(--font-inter)]">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12">
           Featured Projects

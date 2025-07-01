@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Education from "./Education";
 
 export default function About() {
   return (
@@ -47,6 +48,7 @@ export default function About() {
           </Link>
         </div>
       </div>
+      <Education />
     </section>
   );
 }

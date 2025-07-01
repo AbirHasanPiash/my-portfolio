@@ -11,9 +11,9 @@ export default function Navbar() {
 
   const navItems = [
     { label: "Home", href: "/" },
-    { label: "Projects", href: "/projects" },
-    { label: "About", href: "/about" },
-    { label: "Contact", href: "/contact" },
+    { label: "Projects", href: "#projects" },
+    { label: "About", href: "#about" },
+    { label: "Contact", href: "#contact" },
   ];
 
   // Close when clicking outside
@@ -52,14 +52,14 @@ export default function Navbar() {
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center space-x-6">
           {navItems.map(({ label, href }) => (
-            <Link
+            <a
               key={href}
               href={href}
               className="relative text-sm font-medium hover:text-cyan-400 transition-colors duration-200 group"
             >
               {label}
               <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-cyan-400 transition-all duration-300 group-hover:w-full" />
-            </Link>
+            </a>
           ))}
         </div>
 

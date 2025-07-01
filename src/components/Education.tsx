@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Education() {
   return (
-    <section className="bg-gray-900 min-h-screen w-full flex items-center justify-center">
+    <section className="bg-gray-900 mt-20 w-full flex items-center justify-center">
       <div className="w-full max-w-6xl text-white">
         <h2 className="text-3xl sm:text-4xl font-bold text-center mb-8 md:mb-12">
           Education
