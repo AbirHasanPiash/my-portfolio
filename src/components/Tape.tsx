@@ -41,12 +41,26 @@ const techStack = [
 export default function TechStack() {
   return (
     <div className="w-full">
-      <div className="w-full bg-gray-900 py-6">
+      <div className="w-full bg-gray-900 pt-6">
         <div className="flex flex-col items-center space-y-2">
-          <p className="text-xl sm:text-2xl lg:text-3xl font-semibold text-cyan-400 tracking-wide">
+          <p className="text-3xl sm:text-4xl font-semibold text-white tracking-wide">
             Technologies I Use
           </p>
-          <div className="animate-bounce text-cyan-400">
+          <div className="mt-2 animate-bounce text-cyan-400">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5 sm:h-6 sm:w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth={2}
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5 sm:h-6 sm:w-6"
@@ -94,7 +108,7 @@ export default function TechStack() {
 
         {/* Marquee */}
         <div className="relative z-10 group overflow-hidden w-full">
-          <div className="flex w-max p-2 space-x-12 animate-marquee group-hover:[animation-play-state:paused]">
+          <div className="flex w-max space-x-12 animate-marquee group-hover:[animation-play-state:paused]">
             {techStack.concat(techStack).map(({ Icon, color, name }, index) => (
               <div
                 key={index}
