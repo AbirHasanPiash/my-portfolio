@@ -40,7 +40,7 @@ const techStack = [
 
 export default function TechStack() {
   return (
-    <div>
+    <div className="w-full">
       <div className="w-full bg-gray-900 py-6">
         <div className="flex flex-col items-center space-y-2">
           <p className="text-xl sm:text-2xl lg:text-3xl font-semibold text-cyan-400 tracking-wide">

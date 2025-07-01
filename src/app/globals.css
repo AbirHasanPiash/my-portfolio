@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
-body {
+/* body {
   overflow-x: hidden;
-}
+} */
 
 
 @layer utilities {
@@ -55,4 +55,41 @@ body {
 
 .group:hover .animate-marquee {
   animation-play-state: paused;
+}
+
+@keyframes glowPulse {
+  0% {
+    opacity: 0.6;
+    filter: blur(110px);
+    transform: scale(1);
+  }
+  20% {
+    opacity: 0.7;
+    filter: blur(130px);
+    transform: scale(1.03);
+  }
+  40% {
+    opacity: 0.8;
+    filter: blur(150px);
+    transform: scale(1.06);
+  }
+  60% {
+    opacity: 0.75;
+    filter: blur(130px);
+    transform: scale(1.04);
+  }
+  80% {
+    opacity: 0.65;
+    filter: blur(115px);
+    transform: scale(1.01);
+  }
+  100% {
+    opacity: 0.6;
+    filter: blur(110px);
+    transform: scale(1);
+  }
+}
+
+.glow-pulse {
+  animation: glowPulse 5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
 }

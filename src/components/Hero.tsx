@@ -10,7 +10,9 @@ export default function Hero() {
     <section className="relative w-full min-h-[100vh] bg-gray-900 flex flex-col justify-center items-center text-center text-slate-800 font-[var(--font-inter)] overflow-hidden">
       <Stars />
       {/* Luminous background glow */}
-      <div className="absolute top-1/2 left-1/2 w-[300px] h-[240px] bg-gradient-to-tr from-pink-400 via-red-400 to-yellow-500 opacity-70 blur-[120px] rounded-full -translate-x-1/2 -translate-y-1/2 z-0" />
+      <div
+  className="absolute top-2/5 left-1/2 w-[300px] h-[240px] bg-gradient-to-tr from-yellow-400 via-orange-400 to-amber-500 rounded-full -translate-x-1/2 -translate-y-1/2 z-0 glow-pulse"
+/>
 
       {/* Oval Avatar Frame */}
       <motion.div
