@@ -40,37 +40,39 @@ export default function Navbar() {
 
   return (
     <header className="w-full sticky top-0 z-50 border-b border-white/10 bg-gray-900/80 backdrop-blur-md shadow-md transition-all duration-300">
-      <nav className="max-w-6xl mx-auto px-4 sm:px-8 py-4 flex justify-between items-center text-white font-[var(--font-inter)]">
-        {/* Logo */}
-        <Link
-          href="/"
-          className="text-2xl font-bold tracking-tight text-cyan-400 hover:opacity-90 transition"
-        >
-          a_h_Piash
-        </Link>
+      <nav className="py-4 text-white flex justify-center items-center font-[var(--font-inter)]">
+        <div className="w-full px-6 sm:px-10 lg:px-16 max-w-[1440px] flex justify-between items-center">
+          {/* Logo */}
+          <Link
+            href="/"
+            className="text-2xl font-bold tracking-tight text-cyan-400 hover:opacity-90 transition"
+          >
+            a_h_Piash
+          </Link>
 
-        {/* Desktop Nav */}
-        <div className="hidden md:flex items-center space-x-6">
-          {navItems.map(({ label, href }) => (
-            <a
-              key={href}
-              href={href}
-              className="relative text-sm font-medium hover:text-cyan-400 transition-colors duration-200 group"
-            >
-              {label}
-              <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-cyan-400 transition-all duration-300 group-hover:w-full" />
-            </a>
-          ))}
+          {/* Desktop Nav */}
+          <div className="hidden md:flex items-center space-x-6">
+            {navItems.map(({ label, href }) => (
+              <a
+                key={href}
+                href={href}
+                className="relative text-sm font-medium hover:text-cyan-400 transition-colors duration-200 group"
+              >
+                {label}
+                <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-cyan-400 transition-all duration-300 group-hover:w-full" />
+              </a>
+            ))}
+          </div>
+
+          {/* Mobile Menu Toggle */}
+          <button
+            className="md:hidden p-2 rounded hover:bg-white/10 transition"
+            onClick={() => setIsOpen(true)}
+            aria-label="Toggle menu"
+          >
+            <Menu size={24} className="text-white" />
+          </button>
         </div>
-
-        {/* Mobile Menu Toggle */}
-        <button
-          className="md:hidden p-2 rounded hover:bg-white/10 transition"
-          onClick={() => setIsOpen(true)}
-          aria-label="Toggle menu"
-        >
-          <Menu size={24} className="text-white" />
-        </button>
       </nav>
 
       {/* Mobile Modal Menu */}

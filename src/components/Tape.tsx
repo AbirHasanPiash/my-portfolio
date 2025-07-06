@@ -108,7 +108,7 @@ export default function TechStack() {
 
         {/* Marquee */}
         <div className="relative z-10 group overflow-hidden w-full">
-          <div className="flex w-max space-x-12 animate-marquee group-hover:[animation-play-state:paused]">
+          <div className="flex w-max py-2 space-x-12 animate-marquee group-hover:[animation-play-state:paused]">
             {techStack.concat(techStack).map(({ Icon, color, name }, index) => (
               <div
                 key={index}

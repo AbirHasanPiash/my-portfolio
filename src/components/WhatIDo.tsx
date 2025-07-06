@@ -83,8 +83,8 @@ const WhatIDo = () => {
   }, [activeIndex]);
 
   return (
-    <section className="w-full bg-gradient-to-b from-gray-900 via-gray-950 to-gray-900 py-40 px-5">
-      <div className="max-w-6xl mx-auto text-white">
+    <section className="w-full bg-gradient-to-b from-gray-900 via-gray-950 to-gray-900 py-40">
+      <div className="mx-auto text-white max-w-[1440px] px-6 sm:px-10 lg:px-16">
         <h2 className="text-3xl sm:text-4xl font-bold text-center mb-14">
           What I Do
         </h2>
@@ -106,13 +106,22 @@ const WhatIDo = () => {
                 className="relative rounded-2xl p-6 overflow-hidden border border-gray-700 bg-gray-800/60 backdrop-blur-lg shadow-[0_8px_24px_rgba(0,0,0,0.3)] group cursor-pointer transition-colors duration-300 flex flex-col items-center"
               >
                 {/* Glow effect */}
-                <motion.div
+                {/* <motion.div
                   className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 z-[-1] transition-opacity duration-500"
                   style={{
                     background: `radial-gradient(circle at top left, ${domain.color}33, transparent 70%)`,
                     boxShadow: `0 0 40px ${domain.color}55`,
                   }}
-                />
+                /> */}
+                <motion.div
+  className={`absolute inset-0 rounded-2xl z-[-1] transition-opacity duration-500 ${
+    isHovered || isActive ? 'opacity-100' : 'opacity-0'
+  }`}
+  style={{
+    background: `radial-gradient(circle at top left, ${domain.color}33, transparent 70%)`,
+    boxShadow: `0 0 40px ${domain.color}55`,
+  }}
+/>
 
                 <div className="text-xl font-semibold mb-2 text-center">
                   {domain.title}
